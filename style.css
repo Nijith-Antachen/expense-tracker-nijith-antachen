@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+}
+
+
+/* HOME PAGE */
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 18px;
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+#startButton {
+    padding: 12px 28px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#startButton:hover {
+    background: #1d4ed8;
+}
+
+
+/* TRACKER */
+
+#tracker {
+    display: none;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+#tracker h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#tracker h2 {
+    margin-bottom: 20px;
+}
+
+#tracker h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+
+/* INPUTS */
+
+#type,
+#amount,
+#category,
+#description,
+#date,
+#Button,
+#filter,
+#filterCategory,
+#summaryMonth,
+#summaryYear {
+    padding: 10px;
+    border: 1px solid #4b5563;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#type,
+#amount,
+#category,
+#description,
+#date,
+#filter,
+#filterCategory,
+#summaryMonth,
+#summaryYear {
+    background: #1f2937;
+    color: white;
+}
+
+#amount {
+    width: 150px;
+}
+
+#description {
+    width: 220px;
+}
+
+#date {
+    width: 160px;
+}
+
+#Button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#Button:hover {
+    background: #1d4ed8;
+}
+
+
+/* OUTPUT */
+
+#output,
+#fOutput,
+#summaryOutput {
+    background: #1f2937;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 2;
+    overflow-wrap: anywhere;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* TRANSACTION */
+
+.transaction {
+    background: #374151;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+
+/* DELETE AND EDIT BUTTONS */
+
+#output button {
+    padding: 6px 12px;
+    margin: 5px 5px 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#output button[data-delete-index] {
+    background: #dc2626;
+    color: white;
+}
+
+#output button[data-edit-index] {
+    background: #16a34a;
+    color: white;
+}
+
+#output button:hover {
+    opacity: 0.85;
+}
+
+
+/* FILTERS */
+
+#filter,
+#filterCategory,
+#summaryMonth,
+#summaryYear {
+    margin: 5px;
+}
+
+#fOutput,
+#summaryOutput {
+    min-height: 50px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    #home h1 {
+        font-size: 34px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    #tracker {
+        padding: 20px 12px;
+    }
+
+    #tracker h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    #type,
+    #amount,
+    #category,
+    #description,
+    #date,
+    #Button,
+    #filter,
+    #filterCategory,
+    #summaryMonth,
+    #summaryYear {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #output,
+    #fOutput,
+    #summaryOutput {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .transaction {
+        padding: 12px;
+    }
+}

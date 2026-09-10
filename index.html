@@ -1,0 +1,93 @@
+<!doctype html>
+<html> 
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <title> expense tracker </title>
+</head>
+<body>
+<div id="home">
+
+    <h1>EXPENSE TRACKER</h1>
+    <p>Track your income and expenses with ease.</p>
+
+    <button id="startButton">Get Started</button>
+
+</div>
+<div id="tracker">
+
+<h1> EXPENSE TRACKER </h1>
+
+
+
+<h2>ADD TRANSACTIONS</h2>
+<select id="type">
+ <option value="expense">Expense</option> 
+ <option value="income">Income</option> 
+</select>
+<input id="amount" type="number" placeholder="amount">
+<select id="category">
+    <option value="food">Food</option>
+    <option value="transport">Transport</option>
+    <option value="shopping">Shopping</option>
+    <option value="bills">Bills</option>
+    <option value="entertainment">Entertainment</option>
+    <option value="other">Other</option>
+</select>
+
+<input id="description" type="text" placeholder="Description">
+<input id="date" type="date">
+<button id="Button">Add Transaction</button>
+
+<p id="output"></p>
+
+<h3>FILTERED TRANSACTIONS</h3>
+<select id ="filter">
+    <option  value="all">All</option>
+    <option value="expense">Expense</option>
+    <option value="income">Income</option>
+</select>
+<select id="filterCategory">
+    <option value="all">All Categories</option>
+    <option value="food">Food</option>
+    <option value="transport">Transport</option>
+    <option value="shopping">Shopping</option>
+    <option value="bills">Bills</option>
+    <option value="entertainment">Entertainment</option>
+    <option value="other">Other</option>
+</select>
+<p id="fOutput"></p>
+
+    <h3>MONTHLY SUMMARY</h3>
+
+    <select id="summaryMonth">
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+
+    <select id="summaryYear">
+        <option value="2026">2026</option>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+    </select>
+
+    <p id="summaryOutput"></p>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

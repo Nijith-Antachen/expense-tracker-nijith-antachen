@@ -95,7 +95,9 @@ let text=" "
          description.value= editTransaction.details;
     })
     
-}
+} 
+    displayFilteredTransation();
+    monthlySummary();
 }
     
 calculateTotal();

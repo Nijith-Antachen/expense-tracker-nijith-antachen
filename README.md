@@ -22,6 +22,6 @@ expense-tracker/
 ├── style.css
 ├── script.js
 ├── README.md
-└── screenshots\
+└── screenshots/
     ├── desktop.png
-     └── mobile.png
+    └── mobile.png
